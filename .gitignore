@@ -1,3 +1,2 @@
 #Ignorar recursos
-resources/
-img/
+*.txt
