@@ -1,8 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Karla:wght@300;400;700&display=swap');
 //Paleta de Colores
-
+$naranja:#FF5C35;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+}
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 62.5%;
+}
 body{
     margin: 0;
     padding: 0;
-    background:white;
-    color:red;
+}
+//?--------Animaciones--------
+@keyframes LineaMenu{
+    from{
+        background-color: none;
+        width: 0%;
+    }
+    to{
+        background-color: $naranja;
+        width: 100%;
+    }
+}
+//!-------------------------------Header------------------------
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/tatto_header.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 1rem;
+        height: 10%;
+        #name{
+            color:white;
+            font-size: 2rem;
+        }
+        #menu{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a{
+                flex-direction: column;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color:white;
+                text-decoration: none;
+                font-size: 1.8em;
+                font-weight: 400;
+                &:not(&:last-of-type){
+                    margin-right: 1.5rem;
+                }
+                &:hover{
+                    transition: all .5s;
+                    color: $naranja;
+                    &:hover::after{
+                        margin-top: .2rem;
+                        content:" ";
+                        width: 100%;
+                        height: 2px;
+                        animation-name: LineaMenu;
+                        animation-duration: 1s;
+                        animation-iteration-count:initial;
+                        animation-fill-mode:forwards;
+                        
+                    }
+                }
+            }
+        }
+    }
+    #title{
+        width: 100%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h1{
+            color: white;
+            font-family: 'Allison', cursive;
+            font-size: 10rem;
+            line-height: 14rem;
+            &:first-of-type{
+                font-size: 20rem;
+            }
+            &:last-of-type{
+                font-size: 15rem;
+            }
+        }
+    }
 }
