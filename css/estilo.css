@@ -199,7 +199,6 @@ main #clothes {
 main #testimonial {
   width: 100%;
   height: 100vh;
-  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -237,6 +236,26 @@ main #testimonial div #testimonial-content #card {
   height: 60%;
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 1.2em;
+}
+main #testimonial div #testimonial-content #card blockquote {
+  color: white;
+  width: 60%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main #testimonial div #testimonial-content #card blockquote p {
+  font-size: 1.3em;
+}
+main #testimonial div #testimonial-content #card blockquote a {
+  text-decoration: none;
+  color: white;
+  background-color: #FF5C35;
+  padding: 0.5em;
+  font-weight: 400;
+  font-size: 1.1em;
+  border-radius: 10px;
 }
 
 /*=============================================
