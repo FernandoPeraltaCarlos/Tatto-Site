@@ -273,6 +273,77 @@ main{
         width: 100%;
         height: 100vh;
         background-color: black;
+        display:flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 1.5rem;
+        #social{
+            width: 50%;
+            height: 100%;
+            #social-title{
+                width: 100%;
+                height: 30%;
+                text-align: center;
+                h1{
+                    font-family: $titulos;
+                    font-size: 10em;
+                    color:$naranja;
+                }
+            }
+            #social-content{
+                width: 100%;
+                height: 70%;
+                text-align: center;
+                h2{
+                    color:white;
+                }
+                #social-networks{
+                    width: 100%;
+                    height: 20%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    a{
+                        text-decoration: none;
+                        color:none;
+                        margin: 0;
+                        padding: 0;
+                        width: 10%;
+                        margin-right: 5%;
+                        &:first-child{
+                            img{
+                                margin: 0;
+                                padding: 0;
+                                width: 40%;
+                            }
+                        }
+                        &:last-child{
+                            margin-right: 0;
+                        }
+                        img{
+                            margin: 0;
+                            padding: 0;
+                            width: 80%;
+                        }
+                    }
+                }
+            }
+        }
+        #map{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            #map-content{
+                width: 80%;
+                height: 60%;
+                iframe{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
     }
 }
 //!----------------------------Responsive Desing------------------------------

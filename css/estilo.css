@@ -263,6 +263,75 @@ main #contact {
   width: 100%;
   height: 100vh;
   background-color: black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.5rem;
+}
+main #contact #social {
+  width: 50%;
+  height: 100%;
+}
+main #contact #social #social-title {
+  width: 100%;
+  height: 30%;
+  text-align: center;
+}
+main #contact #social #social-title h1 {
+  font-family: "Allison", cursive;
+  font-size: 10em;
+  color: #FF5C35;
+}
+main #contact #social #social-content {
+  width: 100%;
+  height: 70%;
+  text-align: center;
+}
+main #contact #social #social-content h2 {
+  color: white;
+}
+main #contact #social #social-content #social-networks {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #contact #social #social-content #social-networks a {
+  text-decoration: none;
+  color: none;
+  margin: 0;
+  padding: 0;
+  width: 10%;
+  margin-right: 5%;
+}
+main #contact #social #social-content #social-networks a:first-child img {
+  margin: 0;
+  padding: 0;
+  width: 40%;
+}
+main #contact #social #social-content #social-networks a:last-child {
+  margin-right: 0;
+}
+main #contact #social #social-content #social-networks a img {
+  margin: 0;
+  padding: 0;
+  width: 80%;
+}
+main #contact #map {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #contact #map #map-content {
+  width: 80%;
+  height: 60%;
+}
+main #contact #map #map-content iframe {
+  width: 100%;
+  height: 100%;
 }
 
 /*=============================================
