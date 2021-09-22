@@ -200,7 +200,7 @@ main #work #work-fila1 .card {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../../img/tatto_header.jpg);
+  background-image: url(../img/tatto_header.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
