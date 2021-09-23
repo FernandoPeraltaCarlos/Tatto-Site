@@ -63,6 +63,16 @@ header nav #name {
   color: white;
   font-size: 2rem;
 }
+header nav #menu-mobile div {
+  background-color: white;
+  width: 40px;
+  height: 4px;
+  margin-bottom: 20%;
+  border-radius: 2px;
+}
+header nav #menu-mobile div:last-of-type {
+  margin-bottom: 0;
+}
 header nav #menu {
   display: flex;
   justify-content: center;
@@ -416,65 +426,72 @@ main #contact #map #map-content iframe {
 }
 
 /*=============================================
-PANTALLA DE ESCRITORIO GRANDE - LARGE (lg) - revisamos en portatil o pc
+PANTALLA DE ESCRITORIO GRANDE - EXTRALARGE (lg) - revisamos en portatil o pc
 =============================================*/
 @media screen and (min-width: 1600px) {
-  .col-lg-12 {
+  .col-xlg-12 {
     width: 100%;
   }
 
-  .col-lg-11 {
+  .col-xlg-11 {
     width: 91.66666667%;
   }
 
-  .col-lg-10 {
+  .col-xlg-10 {
     width: 83.33333333%;
   }
 
-  .col-lg-9 {
+  .col-xlg-9 {
     width: 75%;
   }
 
-  .col-lg-8 {
+  .col-xlg-8 {
     width: 66.66666667%;
   }
 
-  .col-lg-7 {
+  .col-xlg-7 {
     width: 58.33333333%;
   }
 
-  .col-lg-6 {
+  .col-xlg-6 {
     width: 50%;
   }
 
-  .col-lg-5 {
+  .col-xlg-5 {
     width: 41.66666667%;
   }
 
-  .col-lg-4 {
+  .col-xlg-4 {
     width: 33.33333333%;
   }
 
-  .col-lg-3 {
+  .col-xlg-3 {
     width: 25%;
   }
 
-  .col-lg-2 {
+  .col-xlg-2 {
     width: 16.66666667%;
   }
 
-  .col-lg-1 {
+  .col-xlg-1 {
     width: 8.33333333%;
   }
 
-  .col-lg-0 {
+  .col-xlg-0 {
     display: none;
   }
 
   html {
-    font-size: 12px;
+    font-size: 12px !important;
+  }
+
+  header nav #menu-mobile {
+    display: none !important;
   }
 }
+/*=============================================
+PANTALLA DE ESCRITORIO GRANDE - LARGE (lg) - revisamos en portatil o pc
+=============================================*/
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
   .col-lg-12 {
     width: 100%;
@@ -526,6 +543,10 @@ PANTALLA DE ESCRITORIO GRANDE - LARGE (lg) - revisamos en portatil o pc
 
   .col-lg-0 {
     display: none;
+  }
+
+  header nav #menu-mobile {
+    display: none !important;
   }
 }
 /*=============================================
@@ -583,6 +604,44 @@ PANTALLA DE ESCRITORIO MEDIANO - MEDIUM (md) - revisamos en tablet horizontal 10
   .col-md-0 {
     display: none;
   }
+
+  header nav {
+    flex-wrap: wrap;
+  }
+  header nav #name {
+    width: 50%;
+  }
+  header nav #menu-mobile {
+    width: 50%;
+    height: 50%;
+    display: grid;
+    align-items: center;
+    justify-content: right;
+    align-items: center;
+  }
+  header nav #menu-mobile div {
+    width: 80px;
+    height: 5px;
+    margin-bottom: 2%;
+  }
+  header nav #menu-mobile div:last-of-type {
+    margin-bottom: 0;
+  }
+  header nav #menu {
+    display: none;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FF5C35;
+  }
+  header nav #menu a {
+    color: white;
+    margin-right: 0 !important;
+  }
+  header nav #menu a:hover {
+    background-color: black;
+  }
 }
 /*=============================================
 PANTALLA DE TABLET - SMALL (sm) - revisamos en tablet vertical 768px
@@ -639,6 +698,42 @@ PANTALLA DE TABLET - SMALL (sm) - revisamos en tablet vertical 768px
   .col-sm-0 {
     display: none;
   }
+
+  header nav {
+    flex-wrap: wrap;
+  }
+  header nav #name {
+    width: 50%;
+  }
+  header nav #menu-mobile {
+    width: 50%;
+    height: 50%;
+    display: grid;
+    align-items: center;
+    justify-content: right;
+    align-items: center;
+  }
+  header nav #menu-mobile div {
+    margin-bottom: 1% !important;
+  }
+  header nav #menu-mobile div:last-of-type {
+    margin-bottom: 0;
+  }
+  header nav #menu {
+    display: none;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FF5C35;
+  }
+  header nav #menu a {
+    color: white;
+    margin-right: 0 !important;
+  }
+  header nav #menu a:hover {
+    background-color: black;
+  }
 }
 /*=============================================
 PANTALLA DE PHONES - EXTRA SMALL (xs) - revisamos en movil horizontal 480px o vertical 320px
@@ -694,6 +789,42 @@ PANTALLA DE PHONES - EXTRA SMALL (xs) - revisamos en movil horizontal 480px o ve
 
   .col-xs-0 {
     display: none;
+  }
+
+  header nav {
+    flex-wrap: wrap;
+  }
+  header nav #name {
+    width: 50%;
+  }
+  header nav #menu-mobile {
+    width: 50%;
+    height: 50%;
+    display: grid;
+    align-items: center;
+    justify-content: right;
+    align-items: center;
+  }
+  header nav #menu-mobile div {
+    margin-bottom: 1% !important;
+  }
+  header nav #menu-mobile div:last-of-type {
+    margin-bottom: 0;
+  }
+  header nav #menu {
+    display: none;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FF5C35;
+  }
+  header nav #menu a {
+    color: white;
+    margin-right: 0 !important;
+  }
+  header nav #menu a:hover {
+    background-color: black;
   }
 }
 

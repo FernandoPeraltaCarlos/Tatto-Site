@@ -63,6 +63,18 @@ header{
             color:white;
             font-size: 2rem;
         }
+        #menu-mobile{
+            div{
+                background-color: white;
+                width: 40px;
+                height: 4px;
+                margin-bottom: 20%;
+                border-radius: 2px;
+                &:last-of-type{
+                    margin-bottom: 0;
+                }
+            }
+        }
         #menu{
             display: flex;
             justify-content: center;
@@ -426,28 +438,37 @@ main{
 }
 //!----------------------------Responsive Desing------------------------------
 /*=============================================
-PANTALLA DE ESCRITORIO GRANDE - LARGE (lg) - revisamos en portatil o pc
+PANTALLA DE ESCRITORIO GRANDE - EXTRALARGE (lg) - revisamos en portatil o pc
 =============================================*/
 @media screen and (min-width:1600px){
 
-	.col-lg-12{width:100%;}
-	.col-lg-11{width:91.66666667%;}
-	.col-lg-10{width:83.33333333%;}
-	.col-lg-9{width:75%;}
-	.col-lg-8{width:66.66666667%;}
-	.col-lg-7{width:58.33333333%;}
-	.col-lg-6{width:50%;}
-	.col-lg-5{width:41.66666667%;}
-	.col-lg-4{width: 33.33333333%;}
-	.col-lg-3{width: 25%;}
-	.col-lg-2 {width: 16.66666667%;}
-	.col-lg-1 {width: 8.33333333%;}
-	.col-lg-0 {display:none;}
+	.col-xlg-12{width:100%;}
+	.col-xlg-11{width:91.66666667%;}
+	.col-xlg-10{width:83.33333333%;}
+	.col-xlg-9{width:75%;}
+	.col-xlg-8{width:66.66666667%;}
+	.col-xlg-7{width:58.33333333%;}
+	.col-xlg-6{width:50%;}
+	.col-xlg-5{width:41.66666667%;}
+	.col-xlg-4{width: 33.33333333%;}
+	.col-xlg-3{width: 25%;}
+	.col-xlg-2 {width: 16.66666667%;}
+	.col-xlg-1 {width: 8.33333333%;}
+	.col-xlg-0 {display:none;}
     html{
-        font-size: 12px;
+        font-size: 12px !important;
+    }
+    header{
+        nav{
+            #menu-mobile{
+                display:none !important;
+            }
+        }
     }
 }
-
+/*=============================================
+PANTALLA DE ESCRITORIO GRANDE - LARGE (lg) - revisamos en portatil o pc
+=============================================*/
 @media screen and (min-width:1200px) and(max-width:1600px){
 
 	.col-lg-12{width:100%;}
@@ -463,6 +484,13 @@ PANTALLA DE ESCRITORIO GRANDE - LARGE (lg) - revisamos en portatil o pc
 	.col-lg-2 {width: 16.66666667%;}
 	.col-lg-1 {width: 8.33333333%;}
 	.col-lg-0 {display:none;}
+    header{
+        nav{
+            #menu-mobile{
+                display:none !important;
+            }
+        }
+    }
 }
 
 /*=============================================
@@ -484,7 +512,45 @@ PANTALLA DE ESCRITORIO MEDIANO - MEDIUM (md) - revisamos en tablet horizontal 10
 	.col-md-2{width: 16.66666667%;}
 	.col-md-1{width: 8.33333333%;}
 	.col-md-0 {display:none;}
-   
+    header{
+        nav{
+            flex-wrap: wrap;
+            #name{
+                width: 50%;
+            }
+            #menu-mobile{
+                width: 50%;
+                height: 50%;
+                display: grid;
+                align-items: center;
+                justify-content: right;
+                align-items:center;
+                div{
+                    width: 80px;
+                    height: 5px;
+                    margin-bottom: 2%;
+                    &:last-of-type{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            #menu{
+                display:none;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                background-color: $naranja;
+                a{
+                    color:white;
+                    margin-right: 0 !important;
+                    &:hover{
+                        background-color: black;
+                    }
+                }
+            }
+        }
+    }
 }
 
 /*=============================================
@@ -506,7 +572,43 @@ PANTALLA DE TABLET - SMALL (sm) - revisamos en tablet vertical 768px
 	.col-sm-2{width: 16.66666667%;}
 	.col-sm-1{width: 8.33333333%;}
 	.col-sm-0 {display:none;}
-
+    header{
+        nav{
+            flex-wrap: wrap;
+            #name{
+                width: 50%;
+            }
+            #menu-mobile{
+                width: 50%;
+                height: 50%;
+                display: grid;
+                align-items: center;
+                justify-content: right;
+                align-items:center;
+                div{
+                    margin-bottom: 1% !important;
+                    &:last-of-type{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            #menu{
+                display:none;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                background-color: $naranja;
+                a{
+                    color:white;
+                    margin-right: 0 !important;
+                    &:hover{
+                        background-color: black;
+                    }
+                }
+            }
+        }
+    }
 }
 
 
@@ -529,7 +631,43 @@ PANTALLA DE PHONES - EXTRA SMALL (xs) - revisamos en movil horizontal 480px o ve
 	.col-xs-2{width: 16.66666667%;}
 	.col-xs-1{width: 8.33333333%;}
 	.col-xs-0 {display:none;}
-
+    header{
+        nav{
+            flex-wrap: wrap;
+            #name{
+                width: 50%;
+            }
+            #menu-mobile{
+                width: 50%;
+                height: 50%;
+                display: grid;
+                align-items: center;
+                justify-content:right;
+                align-items:center;
+                div{
+                    margin-bottom:1% !important;
+                    &:last-of-type{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            #menu{
+                display:none;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                background-color: $naranja;
+                a{
+                    color:white;
+                    margin-right: 0 !important;
+                    &:hover{
+                        background-color: black;
+                    }
+                }
+            }
+        }
+    }
 }
 
 
