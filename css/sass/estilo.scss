@@ -458,6 +458,9 @@ PANTALLA DE ESCRITORIO GRANDE - EXTRALARGE (lg) - revisamos en portatil o pc
 	.col-xlg-1 {width: 8.33333333%;}
 	.col-xlg-0 {display:none;}
     //?-------------------------inicio-------------------------------
+    html{
+        font-size: 12px;
+    }
     header{
         nav{
             #menu-mobile{

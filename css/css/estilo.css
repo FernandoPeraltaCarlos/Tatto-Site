@@ -483,10 +483,6 @@ PANTALLA DE ESCRITORIO GRANDE - EXTRALARGE (lg) - revisamos en portatil o pc
     display: none;
   }
 
-  html {
-    font-size: 12px;
-  }
-
   header nav #menu-mobile {
     display: none !important;
   }
