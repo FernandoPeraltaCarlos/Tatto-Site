@@ -46,6 +46,7 @@ header {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  font-size: 1rem;
 }
 header nav {
   display: flex;
@@ -61,7 +62,7 @@ header nav {
 }
 header nav #name {
   color: white;
-  font-size: 2rem;
+  font-size: 2em;
 }
 header nav #menu-mobile div {
   background-color: white;
@@ -89,14 +90,14 @@ header nav #menu a {
   font-weight: 400;
 }
 header nav #menu a:not(header nav #menu a:last-of-type) {
-  margin-right: 1.5rem;
+  margin-right: 1.5em;
 }
 header nav #menu a:hover {
   transition: all 0.5s;
   color: #FF5C35;
 }
 header nav #menu a:hover:hover::after {
-  margin-top: 0.2rem;
+  margin-top: 0.2em;
   content: " ";
   width: 100%;
   height: 2px;
@@ -116,14 +117,14 @@ header #title {
 header #title h1 {
   color: white;
   font-family: "Allison", cursive;
-  font-size: 10rem;
-  line-height: 14rem;
+  font-size: 10em;
+  line-height: 0.8em;
 }
 header #title h1:first-of-type {
-  font-size: 20rem;
+  font-size: 20em;
 }
 header #title h1:last-of-type {
-  font-size: 15rem;
+  font-size: 15em;
 }
 
 main {
@@ -139,6 +140,7 @@ main #about-me {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1rem;
 }
 main #about-me #text {
   width: 60%;
@@ -158,7 +160,7 @@ main #about-me #text #about-me-title h1 {
   color: #FF5C35;
   font-family: "Allison", cursive;
   font-size: 12em;
-  line-height: 8rem;
+  line-height: 1em;
 }
 main #about-me #text #about-me-title h1:first-of-type {
   margin-top: 15%;
@@ -481,10 +483,6 @@ PANTALLA DE ESCRITORIO GRANDE - EXTRALARGE (lg) - revisamos en portatil o pc
     display: none;
   }
 
-  html {
-    font-size: 12px !important;
-  }
-
   header nav #menu-mobile {
     display: none !important;
   }
@@ -620,7 +618,7 @@ PANTALLA DE ESCRITORIO MEDIANO - MEDIUM (md) - revisamos en tablet horizontal 10
     align-items: center;
   }
   header nav #menu-mobile div {
-    width: 80px;
+    width: 40px;
     height: 5px;
     margin-bottom: 2%;
   }
@@ -641,6 +639,33 @@ PANTALLA DE ESCRITORIO MEDIANO - MEDIUM (md) - revisamos en tablet horizontal 10
   }
   header nav #menu a:hover {
     background-color: black;
+  }
+
+  main #about-me {
+    font-size: 0.9rem;
+  }
+  main #about-me #text #about-me-title h1 {
+    line-height: 0.8em;
+  }
+
+  main #work {
+    font-size: 1.3rem;
+  }
+  main #work #work-fila1 .card {
+    width: 20%;
+  }
+  main #work #work-fila1 .card:last-of-type {
+    display: none;
+  }
+  main #work #work-fila2 .card {
+    width: 20%;
+  }
+  main #work #work-fila2 .card:last-of-type {
+    display: none;
+  }
+
+  main #testimonial {
+    font-size: 1.3rem;
   }
 }
 /*=============================================
@@ -699,6 +724,9 @@ PANTALLA DE TABLET - SMALL (sm) - revisamos en tablet vertical 768px
     display: none;
   }
 
+  header {
+    font-size: 0.9rem !important;
+  }
   header nav {
     flex-wrap: wrap;
   }
@@ -733,6 +761,76 @@ PANTALLA DE TABLET - SMALL (sm) - revisamos en tablet vertical 768px
   }
   header nav #menu a:hover {
     background-color: black;
+  }
+
+  main #about-me {
+    font-size: 0.75rem;
+  }
+  main #about-me #text #about-me-title h1 {
+    line-height: 0.8em;
+  }
+
+  main #work {
+    font-size: 1.2rem;
+  }
+  main #work #work-fila1 .card {
+    width: 25%;
+  }
+  main #work #work-fila1 .card:nth-of-type(4), main #work #work-fila1 .card:nth-of-type(5) {
+    display: none;
+  }
+  main #work #work-fila2 .card {
+    width: 25%;
+  }
+  main #work #work-fila2 .card:nth-of-type(4), main #work #work-fila2 .card:nth-of-type(5) {
+    display: none;
+  }
+
+  main #testimonial {
+    font-size: 1.2rem;
+  }
+  main #testimonial div #testimonial-title {
+    height: 30%;
+  }
+  main #testimonial div #testimonial-content #card {
+    width: 70%;
+    height: 70%;
+  }
+
+  main #contact {
+    flex-direction: column;
+  }
+  main #contact #social {
+    width: 100%;
+    height: 60% !important;
+  }
+  main #contact #social #social-title {
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main #contact #social #social-title h1 {
+    font-size: 8em;
+  }
+  main #contact #social #social-content {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  main #contact #social #social-content #social-networks {
+    margin-top: 6%;
+  }
+  main #contact #map {
+    width: 100% !important;
+    height: 40% !important;
+  }
+  main #contact #map #map-content {
+    height: 80%;
+    width: 90%;
   }
 }
 /*=============================================
@@ -791,11 +889,15 @@ PANTALLA DE PHONES - EXTRA SMALL (xs) - revisamos en movil horizontal 480px o ve
     display: none;
   }
 
+  header {
+    font-size: 0.6rem !important;
+  }
   header nav {
     flex-wrap: wrap;
   }
   header nav #name {
     width: 50%;
+    color: pink;
   }
   header nav #menu-mobile {
     width: 50%;
